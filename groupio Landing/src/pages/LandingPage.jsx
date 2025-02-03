@@ -1,11 +1,5 @@
-import Header from "../components/Header";
-
 const LandingPage = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <div className="bg-red-600">landing page</div>;
 };
 
 export default LandingPage;
