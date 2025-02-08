@@ -19,7 +19,9 @@ function Header() {
             Contact Us
           </li>
           <li className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
-            <Button className="bg-primaryColors-primary_1">Sign in</Button>
+            <Button className="bg-primaryColors-primary_1 hover:bg-primaryColors-primary_2_Dark">
+              Sign in
+            </Button>
           </li>
         </ul>
         <Button className="hover:bg-primaryColors-primary_1 cursor-pointer">
