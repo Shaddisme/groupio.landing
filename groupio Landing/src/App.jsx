@@ -4,8 +4,8 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router";
-import RootLayout from "./pages/RootLayout";
-import LandingPage from "./pages/LandingPage";
+import RootLayout from "../src/pages/Landingpage/RootLayout.jsx";
+import LandingPage from "../src/pages/Landingpage/LandingPage.jsx";
 
 function App() {
   const router = createBrowserRouter(
