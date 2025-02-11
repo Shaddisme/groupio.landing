@@ -1,17 +1,8 @@
+import Hero from "./Hero";
 const LandingPage = () => {
-  return (
-    <div>
-      
-      {/* hero 
-    features
-    expense
-    communication
-    decision
-    Testimonials
-    newslater
-    footer */}
-    </div>
-  );
+  return <div>
+    <Hero />
+  </div>;
 };
 
 export default LandingPage;
