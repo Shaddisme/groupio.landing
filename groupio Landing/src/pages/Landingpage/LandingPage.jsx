@@ -6,6 +6,14 @@ const LandingPage = () => {
     <div>
       <Header />
       <Hero />
+      {/* features
+      iternary
+      expanses
+      communication
+      decision 
+      testimonial
+      newslater
+      footer */}
     </div>
   );
 };
