@@ -1,36 +1,39 @@
 const Hero = () => {
   return (
-    <section className="max-w-[1400px] w-full mx-auto px-[6.25rem] py-[4rem] flex flex-col md:flex-row items-center justify-between">
-      <div className="w-[50%] text-left space-y-4">
-        <h1 className="text-5xl font-bold leading-tight">
+    <section className="max-w-[1400px] w-full  px-[5rem] py-[2rem] flex flex-col md:flex-row items-center justify-between">
+      <div className="w-[50%] h-auto text-left flex-col flex gap-[2.53rem] ">
+        <h1 className=" w-full h-auto text-[3.4375rem] text-primaryColors-primary_2_Dark font-bold leading-[3.4375rem]">
           Plan your trip with{" "}
           <span className="text-primaryColors-primary_1">Groupio</span>
         </h1>
-        <p className="text-lg text-gray-600">
-          Experience the joy of effortless group travel with Groupio.
-        </p>
-        <p className="font-bold">
-          Get your group trip out of the group chat and start your next
-          adventure today!
-        </p>
 
-        <div className="flex gap-4 mt-4">
+        <div className="w-full  text-[#5F5E5E] h-auto flex-col flex justify-start items-start text-[1.125rem] gap-[1rem] font-normal leading-[1.5rem]">
+          <p className=" font-normal">
+            Experience the joy of effortless group travel with Groupio.
+          </p>
+          <p className="font-bold ">
+            Get your group trip out of the group chat and start your next
+            adventure today!
+          </p>
+        </div>
+
+        <div className=" flex-row  flex justify-start items-center gap-[2rem] ">
           <input
             type="email"
             placeholder="Enter your email"
-            className="border px-4 py-2 rounded-lg w-[280px] md:w-[320px] lg:w-[350px]"
+            className="border border-primaryColors-primary_1_light bg-white text-[#5F5E5E] rounded-[0.375rem] p-[1rem] items-center shrink-0 gap-[0.625rem]  h-[3.75rem] md:w-[320px] lg:w-[350px]"
           />
-          <button className="bg-primaryColors-primary_1 text-white px-6 py-2 rounded-lg hover:bg-primaryColors-primary_2">
+          <button className="bg-primaryColors-primary_1 text-white px-[3rem]  rounded-[6.25rem]  h-[3.75rem] w-[11.8125rem]  hover:bg-primaryColors-primary_2">
             Submit
           </button>
         </div>
       </div>
 
-      <div className="w-[50%] flex justify-center">
+      <div className="w-[50%]  h-auto flex flex-row justify-end ">
         <img
-          src="/src/components/assets/Hero.svg"
+          src="assets/heroimage.svg"
           alt="Travel"
-          className="w-full max-w-lg md:max-w-md"
+          className="w-full h-full "
         />
       </div>
     </section>

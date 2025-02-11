@@ -7,26 +7,26 @@ function Header() {
         <img src="/assets/logo.svg" className="cursor-pointer" alt="logo" />
       </div>
 
-      <div className="w-[80%] h-auto flex flex-row gap-[1rem] justify-end items-center">
+      <div className="w-[80%] h-auto bord flex flex-row gap-[1rem] justify-end items-center">
         <ul className="flex justify-start items-center flex-row gap-[1rem] text-[1.125rem] font-bold leading-[1.5625rem] text-primaryColors-primary_2_Dark">
-          <li className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
+          <a className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
             How It Works
-          </li>
-          <li className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
+          </a>
+          <a className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
             Testimonials
-          </li>
-          <li className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
+          </a>
+          <a className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
             Contact Us
-          </li>
-          <li className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
+          </a>
+          <a className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
             <Button className="bg-primaryColors-primary_1 hover:bg-primaryColors-primary_2_Dark">
               Sign in
             </Button>
-          </li>
+          </a>
+          <Button className="hover:bg-primaryColors-primary_1 cursor-pointer">
+            Get The App
+          </Button>
         </ul>
-        <Button className="hover:bg-primaryColors-primary_1 cursor-pointer">
-          Get The App
-        </Button>
       </div>
     </div>
   );
