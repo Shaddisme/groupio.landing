@@ -1,5 +1,17 @@
 const LandingPage = () => {
-  return <div>LandingPage</div>;
+  return (
+    <div>
+      
+      {/* hero 
+    features
+    expense
+    communication
+    decision
+    Testimonials
+    newslater
+    footer */}
+    </div>
+  );
 };
 
 export default LandingPage;
