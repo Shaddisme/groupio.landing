@@ -10,3 +10,13 @@
   box-sizing: border-box;
   font-family: "Open Sans", serif;
 }
+
+.active {
+  text-decoration: underline;
+  padding-bottom: 2px;
+  transition: 0.1s ease-in-out;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

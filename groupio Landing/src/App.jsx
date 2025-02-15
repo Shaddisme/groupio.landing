@@ -12,6 +12,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/contact" element={<LandingPage />} />
       </Route>
     )
   );

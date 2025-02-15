@@ -1,11 +1,24 @@
+import Communication from "./Communication";
+import Decision from "./Decision";
+import Expenses from "./Expenses";
+import Features from "./Features";
 import Header from "./Header";
 import Hero from "./Hero";
+import Itinerary from "./Itinerary";
 
 const LandingPage = () => {
   return (
     <div>
       <Header />
-      <Hero />
+      <div className="pt-[6rem]">
+        <Hero />
+        <Features />
+        <Itinerary />
+        <Expenses />
+        <Communication />
+        <Decision />
+      </div>
+
       {/* features
       iternary
       expanses

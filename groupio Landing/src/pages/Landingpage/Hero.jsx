@@ -1,6 +1,9 @@
 const Hero = () => {
   return (
-    <section className="max-w-[1400px] w-full  px-[5rem] py-[2rem] flex flex-col md:flex-row items-center justify-between">
+    <section
+      id="home"
+      className="max-w-[1400px] w-full  pl-[6.25rem]  py-[4rem] flex flex-row items-center justify-between"
+    >
       <div className="w-[50%] h-auto text-left flex-col flex gap-[2.53rem] ">
         <h1 className=" w-full h-auto text-[3.4375rem] text-primaryColors-primary_2_Dark font-bold leading-[3.4375rem]">
           Plan your trip with{" "}
@@ -29,11 +32,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-[50%]  h-auto flex flex-row justify-end ">
+      <div className="w-[50%] h-auto  justify-end flex ">
         <img
           src="assets/heroimage.svg"
           alt="Travel"
-          className="w-full h-full "
+          className="w-[32.125rem] h-[29.8125rem] "
         />
       </div>
     </section>
