@@ -10,3 +10,40 @@
   box-sizing: border-box;
   font-family: "Open Sans", serif;
 }
+
+.active {
+  text-decoration: underline;
+  padding-bottom: 2px;
+  transition: 0.1s ease-in-out;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+a:hover {
+  color: #21705f;
+  text-decoration: underline;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: none !important;
+}
+
+.slick-dots li {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 30px;
+  color: #999;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
+  font-size: 30px;
+}
