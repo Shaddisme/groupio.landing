@@ -5,6 +5,9 @@ import Features from "./Features";
 import Header from "./Header";
 import Hero from "./Hero";
 import Itinerary from "./Itinerary";
+import NewsLetter from "./NewsLetter";
+
+import Testmonial from "./Testimonial";
 
 const LandingPage = () => {
   return (
@@ -17,6 +20,8 @@ const LandingPage = () => {
         <Expenses />
         <Communication />
         <Decision />
+        <Testmonial />
+        <NewsLetter />
       </div>
 
       {/* features

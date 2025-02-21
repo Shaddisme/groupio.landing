@@ -20,3 +20,30 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+a:hover {
+  color: #21705f;
+  text-decoration: underline;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: none !important;
+}
+
+.slick-dots li {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 30px;
+  color: #999;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
+  font-size: 30px;
+}
