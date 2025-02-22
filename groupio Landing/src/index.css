@@ -47,3 +47,7 @@ a:hover {
   color: #333;
   font-size: 30px;
 }
+
+.signup:hover {
+  text-decoration: none;
+}
