@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="max-w-[1400px] w-full  pl-[6.25rem]  py-[4rem] flex flex-row items-center justify-between"
+      className=" w-full  px-[6.25rem]  py-[4rem] flex flex-row items-center justify-between"
     >
       <div className="w-[50%] h-auto text-left flex-col flex gap-[2.53rem] ">
         <h1 className=" w-full h-auto text-[3.4375rem] text-primaryColors-primary_2_Dark font-bold leading-[3.4375rem]">
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-[50%] h-auto  justify-end flex ">
+      <div className="w-[50%] h-auto  justify-end  flex flex-row ">
         <img
           src="assets/heroimage.svg"
           alt="Travel"
@@ -44,3 +44,32 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// import { useFormik } from 'formik';
+
+//  const SignupForm = () => {
+//    // Pass the useFormik() hook initial form values and a submit function that will
+//    // be called when the form is submitted
+//    const formik = useFormik({
+//      initialValues: {
+//        email: '',
+//      },
+//      onSubmit: values => {
+//        alert(JSON.stringify(values, null, 2));
+//      },
+//    });
+//    return (
+//      <form onSubmit={formik.handleSubmit}>
+//        <label htmlFor="email">Email Address</label>
+//        <input
+//          id="email"
+//          name="email"
+//          type="email"
+//          onChange={formik.handleChange}
+//          value={formik.values.email}
+//        />
+
+//        <button type="submit">Submit</button>
+//      </form>
+//    );
+//  };

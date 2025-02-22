@@ -3,6 +3,7 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import PreviousIcon from "/assets/previousIcon.svg";
 import NextIcon from "/assets/NextIcon.svg";
 import photo2 from "/assets/image2.png";
@@ -28,7 +29,7 @@ const StarRating = () => {
 };
 
 const TestimonialCard = ({ name, jobTitle, body, image }) => (
-  <div className="w-[100%] rounded-[1.25rem] px-[4rem] flex flex-row justify-start gap-[3.28rem] items-center bg-[#4ABF9A] h-[28.9375rem] py-[4rem] bg-[url('/assets/bigComma.png')] bg-right-bottom bg-no-repeat">
+  <div className="w-[100%] rounded-[1.25rem] px-[4rem] flex flex-row justify-start gap-[3.28rem] items-center bg-[#4ABF9A] h-[25.9375rem] py-[4rem] bg-[url('/assets/bigComma.png')] bg-right-bottom bg-no-repeat">
     <div className="w-[30%] pt-[0.4rem] h-auto">
       <img src={image} alt="photo" className="pb-[1.44rem]" />
       <div className="text-center text-[#0A2923] flex items-center justify-center gap-[0.50rem] flex-col">
@@ -108,7 +109,7 @@ function Testimonial() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 700,
+    speed: 800,
     autoplaySpeed: 1800,
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
@@ -122,7 +123,7 @@ function Testimonial() {
     <Layout
       id="testimonial"
       // Dynamically apply the background class based on current slide
-      className={`w-full h-auto flex flex-col justify-start items-center py-[3rem] gap-[0.5rem] ${bgColors[currentSlide]} transition-colors duration-300`}
+      className={`w-full h-auto flex flex-col overflow-hidden justify-start px-[1rem] items-center py-[4rem] gap-[0.25rem] ${bgColors[currentSlide]} transition-colors duration-600`}
     >
       <h1 className="text-white text-[2.25rem] font-bold leading-[2.8125rem]">
         Testimonials
