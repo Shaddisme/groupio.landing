@@ -31,7 +31,7 @@ const LoginForm = () => {
   });
 
   return (
-    <div className="w-1/2 h-full flex flex-col justify-start z-10 items-center bg-white gap-[1.5rem] rounded-r-[2.50rem] py-[2rem]  px-[3rem]  ">
+    <div className="w-1/2 h-full flex flex-col justify-start z-10 items-center bg-white overflow-y-hidden gap-[1.5rem] rounded-r-[2.50rem] py-[2rem]  px-[3rem]  ">
       <div className="w-full h-auto flex flex-col justify-start items-center gap-[0.50rem] text-center">
         <h1 className="text-primaryColors-primary_2_Dark/70 text-[2.50rem] font-serif font-bold leading-[3.4375rem]">
           Welcome Back

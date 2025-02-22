@@ -25,7 +25,7 @@ const ContactForm = () => {
   });
 
   return (
-    <div className="w-1/2 h-auto flex flex-col justify-start z-10 items-center bg-white gap-[1.2rem] rounded-r-[2.50rem]   px-[3rem]  py-[1.4rem]">
+    <div className="w-1/2 h-screen flex flex-col justify-start z-10 items-center bg-white gap-[1.2rem] rounded-r-[2.50rem] overflow-hidden  px-[3rem]  py-[1rem]">
       <div className="w-full h-auto text-center">
         <h1 className="text-primaryColors-primary_2_Dark/70 text-[2.50rem] font-serif font-bold leading-[3.4375rem]">
           Contact Us
@@ -33,7 +33,7 @@ const ContactForm = () => {
       </div>
       <form
         onSubmit={formik.handleSubmit}
-        className="w-[90%] h-auto flex flex-col border gap-[0.8rem] outline-green-900/30 outline-1 rounded-[1rem] bg-white border-primaryColors-primary_1_light px-[3rem] py-[2rem]"
+        className="w-[90%] h-full flex flex-col border gap-[0.8rem] outline-green-900/30 outline-1 rounded-[1rem] bg-white border-primaryColors-primary_1_light px-[3rem] py-[2rem]"
       >
         <div className="w-full h-auto flex flex-col justify-start items-start bg-white gap-[0.125rem]">
           <label
@@ -127,9 +127,9 @@ const ContactForm = () => {
 };
 
 const RightContact = () => (
-  <div className="w-1/2 z-0 h-full overflow-y-hidden ">
+  <div className="w-1/2 z-0 h-full  ">
     <div
-      className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/contactImage.svg')] h-screen"
+      className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/contactImage.svg')] h-dvh "
       alt="contactbg"
     >
       <NavLink to={"/"}>
@@ -148,7 +148,7 @@ const RightContact = () => (
 // bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat
 const Contact = () => {
   return (
-    <div className="w-full h-auto  bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat justify-between items-start flex flex-row">
+    <div className="w-full h-auto  overflow-hidden bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat justify-between items-start flex flex-row">
       <ContactForm />
       <RightContact />
     </div>
