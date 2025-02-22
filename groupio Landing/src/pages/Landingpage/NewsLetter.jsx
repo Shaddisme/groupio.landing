@@ -2,7 +2,7 @@ import Layout from "./Layout";
 
 const NewsLetter = () => {
   return (
-    <Layout className="px-[11rem] py-[4rem] flex flex-row justify-center items-center ">
+    <Layout className=" py-[4rem] flex flex-row justify-center items-center ">
       <div>
         <div className="w-full h-auto flex flex-col py-[5.75rem] px-[4.875rem] justify-center items-center bg-primaryColors-primary_1 rounded-[1.25rem] gap-[2.70rem]">
           <div className="w-full text-white h-auto justify-start leading-[1.5625rem] font-bold item-start flex flex-col gap-[2rem]">

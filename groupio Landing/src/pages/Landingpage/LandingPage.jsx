@@ -11,9 +11,9 @@ import Testmonial from "./Testimonial";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="w-full h-auto overflow-x-hidden ">
       <Header />
-      <div className="pt-[6rem]">
+      <div className="pt-[6rem] w-full">
         <Hero />
         <Features />
         <Itinerary />

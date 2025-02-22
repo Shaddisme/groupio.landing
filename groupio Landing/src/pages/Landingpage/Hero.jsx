@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="max-w-[1400px] w-full  px-[6.25rem]  py-[4rem] flex flex-row items-center justify-between"
+      className=" w-full  px-[6.25rem]  py-[4rem] flex flex-row items-center justify-between"
     >
       <div className="w-[50%] h-auto text-left flex-col flex gap-[2.53rem] ">
         <h1 className=" w-full h-auto text-[3.4375rem] text-primaryColors-primary_2_Dark font-bold leading-[3.4375rem]">

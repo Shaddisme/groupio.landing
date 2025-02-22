@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 // import contactImage from "/assets/contactImage.svg";
 import cancel from "/assets/cancel.svg";
+import { NavLink } from "react-router";
 const ContactForm = () => {
   const validationSchema = Yup.object({
     name: Yup.string().required(" Name is Required"),
@@ -24,7 +25,7 @@ const ContactForm = () => {
   });
 
   return (
-    <div className="w-1/2 h-auto flex flex-col justify-start z-10 items-center bg-white gap-[1.2rem] rounded-r-[2.50rem]   px-[3rem]  py-[1.5rem]">
+    <div className="w-1/2 h-auto flex flex-col justify-start z-10 items-center bg-white gap-[1.2rem] rounded-r-[2.50rem]   px-[3rem]  py-[1.4rem]">
       <div className="w-full h-auto text-center">
         <h1 className="text-primaryColors-primary_2_Dark/70 text-[2.50rem] font-serif font-bold leading-[3.4375rem]">
           Contact Us
@@ -131,11 +132,13 @@ const RightContact = () => (
       className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/contactImage.svg')] h-screen"
       alt="contactbg"
     >
-      <img
-        src={cancel}
-        className=" cursor-pointer flex flex-row justify-end  items-start "
-        alt="cancel"
-      />
+      <NavLink to={"/"}>
+        <img
+          src={cancel}
+          className=" cursor-pointer   hover:opacity-70 flex flex-row justify-end  items-start "
+          alt="cancel"
+        />
+      </NavLink>
     </div>
   </div>
 );

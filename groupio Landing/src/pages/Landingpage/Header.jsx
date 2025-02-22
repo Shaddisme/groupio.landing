@@ -53,11 +53,14 @@ function Header() {
             >
               Contact Us
             </NavLink>
-            <a className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer">
+            <NavLink
+              to={"login"}
+              className="py-[1rem] px-[1.5rem] hover:text-primaryColors-primary_2_Dark/70 cursor-pointer"
+            >
               <Button className="bg-primaryColors-primary_1_light/60 hover:bg-primaryColors-primary_2_Dark/90 hover:no-underline">
                 Sign in
               </Button>
-            </a>
+            </NavLink>
             <Button className="hover:bg-primaryColors-primary_1 cursor-pointer">
               Get The App
             </Button>
