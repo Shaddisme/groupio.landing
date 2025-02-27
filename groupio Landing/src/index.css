@@ -12,18 +12,13 @@
 }
 
 .active {
-  text-decoration: underline;
-  padding-bottom: 2px;
+  padding-bottom: 0.01rem;
   transition: 0.1s ease-in-out;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
 }
 
 a:hover {
   color: #21705f;
-  text-decoration: underline;
 }
 
 .slick-prev::before,

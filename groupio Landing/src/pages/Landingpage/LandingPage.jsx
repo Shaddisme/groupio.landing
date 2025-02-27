@@ -2,6 +2,7 @@ import Communication from "./Communication";
 import Decision from "./Decision";
 import Expenses from "./Expenses";
 import Features from "./Features";
+import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import Itinerary from "./Itinerary";
@@ -22,6 +23,7 @@ const LandingPage = () => {
         <Decision />
         <Testmonial />
         <NewsLetter />
+        <Footer />
       </div>
 
       {/* features

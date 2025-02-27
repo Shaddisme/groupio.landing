@@ -16,7 +16,7 @@ const NewsLetter = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="border border-[#D9D9D9] bg-primaryColors-primary_1 text-[1.0625rem] font-normal leading-[1.5625rem] text-[#5F5E5E] rounded-[1.25rem] py-[1.5rem] px-[1.25rem] text-[rgba(235, 244, 242, 0.92)] items-center shrink-0 gap-[0.625rem]  h-[3.75rem] md:w-[320px] lg:w-[48.375rem]"
+              className="border border-[#D9D9D9] outline-none text-white bg-primaryColors-primary_1 text-[1.0625rem] font-normal leading-[1.5625rem]  rounded-[1.25rem] py-[1.5rem] px-[1.25rem] text-[rgba(235, 244, 242, 0.92)] items-center shrink-0 gap-[0.625rem]  h-[3.75rem] md:w-[320px] lg:w-[48.375rem]"
             />
             <button className="bg-white text-black font-bold text-[1.125rem] leading-[1.5625rem] px-[2.5rem]  gap-[0.625rem]  rounded-[6.25rem]  py-[1rem] w-[11.8125rem]  ">
               Submit
