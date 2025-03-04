@@ -15,7 +15,7 @@ function Header() {
     }
   };
   return (
-    <Layout className=" bg-white shadow-sm fixed z-10 py-[1rem]">
+    <Layout className=" lg:block hidden fixed z-10 py-[1rem]   bg-white/20 shadow-[inset_0_1px_0.5px_rgba(255,255,255,0.2)] backdrop-blur-lg ">
       <div className=" w-full h-auto flex flex-row justify-between items-center">
         <div className="w-[20%] h-auto">
           <a
