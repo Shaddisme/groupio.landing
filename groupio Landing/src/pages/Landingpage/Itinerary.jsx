@@ -44,9 +44,9 @@ const Itinerary = () => {
         </div>
 
         {/* button part */}
-        <div className="w-full h-auto flex flex-row justify-center  lg:justify-start items-start">
-          <Button className=" lg:px-[1.5rem] font-bold  py-[1.5rem] px-[3rem]">
-            Learn more{" "}
+        <div className="w-full h-auto flex flex-row justify-end  lg:justify-start items-start">
+          <Button className=" lg:px-[1.5rem] flex flex-row py-[1.5rem] px-[3rem]">
+            <span> Learn more</span>
           </Button>
         </div>
       </div>

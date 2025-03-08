@@ -43,20 +43,20 @@ a:hover {
 }
 
 .slick-dots li {
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   margin: 0 10px;
 }
 
 .slick-dots li button:before {
-  font-size: 30px;
+  font-size: 10px;
   color: #999;
   opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
   color: #333;
-  font-size: 30px;
+  font-size: 10px;
 }
 
 .signup:hover {

@@ -35,9 +35,20 @@ const SignUpForm = () => {
   });
 
   return (
-    <div className="w-1/2 h-full flex flex-col justify-start z-10 items-center bg-white overflow-y-hidden gap-[1.5rem] rounded-r-[2.50rem] py-[1rem]  px-[3rem]  ">
-      <div className="w-full h-auto flex flex-col justify-start items-center gap-[0.50rem] text-center">
-        <h1 className="text-primaryColors-primary_2_Dark/70 text-[2.50rem] font-serif font-bold leading-[3.4375rem]">
+    <div className="lg:w-1/2 w-full h-full relative flex flex-col justify-start z-10 items-center bg-white overflow-y-hidden gap-[1.5rem] rounded-[2.50rem] lg:rounded-r-[2.50rem] lg:rounded-l-[0rem] py-[1rem] lg:py-[1.5rem]  px-[0.8rem] lg:px-[3rem]  ">
+      {/* <NavLink
+        className="w-full h-auto lg:hidden absolute  top-4 right-3 flex flex-row  justify-end "
+        to={"/"}
+      >
+        <img
+          src={cancel}
+          className=" cursor-pointer    hover:opacity-70 flex flex-row justify-end  items-start "
+          alt="cancel"
+        />
+      </NavLink> */}
+
+      <div className="w-full h-auto flex flex-col justify-start items-center gap-[0.1rem] lg:gap-[0.50rem] text-center">
+        <h1 className="text-primaryColors-primary_2_Dark/70 lg:text-[2.50rem] text-[1.8rem] font-serif font-bold leading-[3.4375rem]">
           Create an Account
         </h1>
         <p className="text-[1.0625rem] text-center font-normal leading-[1.5625rem] text-primaryColors-primary_2_Dark/70  ">
@@ -47,14 +58,14 @@ const SignUpForm = () => {
 
       {/* google login and don't have an account  */}
       <div className="w-full  px-[0.5rem] h-auto flex-col flex justify-start items-center gap-[1.1rem]">
-        <div className="w-full h-auto flex flex-row justify-center text-center items-center gap-[1.25rem]">
+        <div className="w-full h-auto flex lg:flex-row flex-col justify-center text-center items-center gap-[0.5rem] lg:gap-[1.25rem]">
           <button className="w-full text-nowrap h-auto flex flex-row justify-center items-center gap-[0.65rem] py-[1rem] px-[0.94rem] rounded-[0.375rem] bg-white text-black/70 border border-primaryColors-primary_1_light ">
             <img
               src={google}
               className="w-[1.25rem] h-[1.25rem]"
               alt="googleicon"
             />
-            <span>Continue with Google</span>
+            <span>Sign Up with Google</span>
           </button>
           <button className="w-full text-nowrap h-auto  text-center flex flex-row justify-center items-center gap-[0.65rem] py-[1rem] px-[0.94rem] rounded-[0.375rem] bg-white text-black/70 border border-primaryColors-primary_1_light ">
             <img
@@ -62,13 +73,13 @@ const SignUpForm = () => {
               className="w-[1.25rem] h-[1.25rem]"
               alt="facebookIcon"
             />
-            <span>Continue with Facebook</span>
+            <span>Sign Up with Facebook</span>
           </button>
         </div>
       </div>
       <form
         onSubmit={formik.handleSubmit}
-        className="w-[100%] h-auto flex flex-col border gap-[0.5rem] outline-green-900/30 outline-1 rounded-[1rem] bg-white border-primaryColors-primary_1_light px-[3rem] py-[1.5rem]"
+        className="w-[100%] h-auto flex flex-col border gap-[0.5rem] outline-green-900/30 outline-1 rounded-[1rem] bg-white border-primaryColors-primary_1_light  px-[0.8rem] lg:px-[3rem] py-[1.5rem]"
       >
         {/* email */}
         <div className="w-full h-auto flex flex-col justify-start items-start bg-white gap-[0.125rem]">
@@ -124,7 +135,7 @@ const SignUpForm = () => {
 
             <button
               onClick={() => setShowpassword(!showpassword)}
-              type="button"
+              type="submit"
               className="absolute right-4 top-3 w-4"
             >
               {showpassword ? (
@@ -189,7 +200,7 @@ const SignUpForm = () => {
         <div className="w-full h-auto flex flex-col justify-start gap-[0.8rem] ">
           <button
             type="submit"
-            className="w-full text-white h-[3.375rem] py-[0.875rem] mt-[1rem] px-[3.0625rem] gap-[0.625rem] flex-shrink-0 flex flex-row justify-center items-center rounded-[0.375rem] bg-primaryColors-primary_1"
+            className="w-full cursor-pointer hover:opacity-80  text-white h-[3.375rem] py-[0.875rem] mt-[1rem] px-[3.0625rem] gap-[0.625rem] flex-shrink-0 flex flex-row justify-center items-center rounded-[0.375rem] bg-primaryColors-primary_1"
           >
             Login
           </button>
@@ -204,7 +215,7 @@ const SignUpForm = () => {
           <p className=" text-[#B6B1B1] font-normal leading-[1.25rem] text-[0.875rem] ">
             Already have an account?
             <Link
-              to={"/signup"}
+              to={"/login"}
               className="text-primaryColors-primary_1 pl-[0.25rem] hover:underline cursor-pointer "
             >
               Login
@@ -217,7 +228,7 @@ const SignUpForm = () => {
 };
 
 const RightSignUp = () => (
-  <div className="w-1/2 z-0 h-full ">
+  <div className="w-1/2 z-0 lg:block hidden h-full ">
     <div
       className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/singupimage.svg')] h-full"
       alt="contactbg"
@@ -238,7 +249,7 @@ const RightSignUp = () => (
 // bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat
 const SignUp = () => {
   return (
-    <div className="w-full h-full overflow-hidden  bg-[url('/assets/singupimage.svg')] bg-cover  bg-no-repeat justify-between items-start flex flex-row">
+    <div className="w-full h-full overflow-hidden  bg-[url('/assets/singupimage.svg')] bg-cover  bg-no-repeat lg:justify-between bg-center justify-center  lg:px-[0rem] px-[0.5rem] lg:py-0 py-[0.1rem] items-start flex flex-row">
       <SignUpForm />
       <RightSignUp />
     </div>

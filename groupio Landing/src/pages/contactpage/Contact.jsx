@@ -3,7 +3,9 @@ import * as Yup from "yup";
 // import contactImage from "/assets/contactImage.svg";
 import cancel from "/assets/cancel.svg";
 import { NavLink } from "react-router";
+import { useState } from "react";
 const ContactForm = () => {
+  const [success, setSuccess] = useState(false);
   const validationSchema = Yup.object({
     name: Yup.string().required(" Name is Required"),
     email: Yup.string()
@@ -19,21 +21,54 @@ const ContactForm = () => {
       message: "",
     },
     validationSchema,
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        const scriptUrl =
+          "https://script.google.com/macros/s/AKfycbyCYH1ijL_Oq4XI52CTaTN6REf9qut47BFtwy-gnibOEsaJ_hFIduT_ZRRAJx3n7zI/exec";
+
+        const response = await fetch(scriptUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams({
+            name: values.name,
+            email: values.email,
+            message: values.message,
+          }),
+        });
+
+        if (response.ok) {
+          // alert("Message sent successfully!");
+          setSuccess(true);
+
+          resetForm();
+        } else {
+          // alert("Failed to send message. Please try again.");
+        }
+      } catch (error) {
+        // alert("An error occurred. Please try again later.");
+        console.log(error);
+      }
     },
   });
 
   return (
-    <div className="w-1/2 h-screen flex flex-col justify-start z-10 items-center bg-white gap-[1.2rem] rounded-r-[2.50rem] overflow-hidden  px-[3rem]  py-[1rem]">
+    <div className="lg:w-1/2 w-full lg:h-screen  flex flex-col justify-start z-10 items-center bg-white overflow-y-hidden gap-[1rem] rounded-[2.50rem] lg:rounded-r-[2.50rem] lg:rounded-l-[0rem] py-[1rem]  px-[0rem] lg:px-[3rem]  ">
       <div className="w-full h-auto text-center">
-        <h1 className="text-primaryColors-primary_2_Dark/70 text-[2.50rem] font-serif font-bold leading-[3.4375rem]">
+        <h1 className="text-primaryColors-primary_2_Dark/70 lg:text-[2.50rem] text-[1.8rem] font-serif font-bold leading-[3.4375rem]">
           Contact Us
         </h1>
       </div>
+
+      {success && (
+        <div className="bg-green-100 px-[4rem] font-normal text-[1rem] py-[0.5rem] rounded-3xl">
+          <p className="text-green-600">Thank you for contacting us</p>
+        </div>
+      )}
       <form
         onSubmit={formik.handleSubmit}
-        className="w-[90%] h-full flex flex-col border gap-[0.8rem] outline-green-900/30 outline-1 rounded-[1rem] bg-white border-primaryColors-primary_1_light px-[3rem] py-[2rem]"
+        className="lg:w-[90%] w-[95%] h-auto flex flex-col border gap-[0.5rem] outline-green-900/30 outline-1 rounded-[1rem] bg-white border-primaryColors-primary_1_light  px-[0.8rem] lg:px-[3rem] py-[1.5rem]"
       >
         <div className="w-full h-auto flex flex-col justify-start items-start bg-white gap-[0.125rem]">
           <label
@@ -117,7 +152,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-full text-white h-[3.375rem] py-[0.875rem] mt-[1rem] px-[3.0625rem] gap-[0.625rem] flex-shrink-0 flex flex-row justify-center items-center rounded-[0.375rem] bg-primaryColors-primary_1"
+          className="w-full cursor-pointer hover:opacity-80 text-white h-[3.375rem] py-[0.875rem] mt-[1rem] px-[3.0625rem] gap-[0.625rem] flex-shrink-0 flex flex-row justify-center items-center rounded-[0.375rem] bg-primaryColors-primary_1"
         >
           Submit
         </button>
@@ -127,7 +162,7 @@ const ContactForm = () => {
 };
 
 const RightContact = () => (
-  <div className="w-1/2 z-0 h-full  ">
+  <div className="w-1/2 hidden lg:block z-0 h-full  ">
     <div
       className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/contactImage.svg')] h-dvh "
       alt="contactbg"
@@ -148,7 +183,7 @@ const RightContact = () => (
 // bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat
 const Contact = () => {
   return (
-    <div className="w-full h-auto  overflow-hidden bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat justify-between items-start flex flex-row">
+    <div className="w-full lg:h-auto h-screen overflow-hidden bg-[url('/assets/contactImage.svg')] bg-cover  bg-center justify-center bg-no-repeat lg:justify-between items-start flex flex-row   lg:px-[0rem] px-[0.5rem] lg:py-0 py-[0.5rem] ">
       <ContactForm />
       <RightContact />
     </div>

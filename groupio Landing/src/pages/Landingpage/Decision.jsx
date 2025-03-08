@@ -41,9 +41,9 @@ const Decision = () => {
         </div>
 
         {/* button part */}
-        <div className="w-3/4 h-auto flex flex-row lg:justify-start justify-center items-start">
-          <Button className=" lg:px-[1.5rem] font-bold  py-[1.5rem] px-[3rem]">
-            Learn more{" "}
+        <div className="w-full h-auto flex flex-row  lg:justify-start justify-end items-start">
+          <Button className=" lg:px-[1.5rem] flex flex-row py-[1.5rem] px-[3rem]">
+            <span> Learn more</span>
           </Button>
         </div>
       </div>
