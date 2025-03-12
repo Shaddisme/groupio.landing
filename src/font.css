@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "OpenSansHebrew-Bold";
+  src: url("../fonts/open-sans-hebrew/OpenSansHebrew-Bold.ttf") format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "OpenSansHebrew-Regular";
+  src: url("../fonts/open-sans-hebrew/OpenSansHebrew-Regular.ttf")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
