@@ -45,17 +45,28 @@ export default function MobileHeader() {
         <ul className="flex flex-col items-center gap-6">
           {navbarData.map((link, index) => (
             <li key={index}>
-              <a
-                href={link.href}
-                // spy={true}
-                // smooth={true}
-                offset={-70} // Adjust this based on your header height
-                // duration={500}
-                className="text-primary-40 text-lg cursor-pointer hover:opacity-90"
-                onClick={showNav} // Close menu when clicking a link
-              >
-                {link.title}
-              </a>
+              {index === 2 ? (
+                <NavLink
+                  className="text-primary-40 text-lg cursor-pointer hover:opacity-90"
+                  to={`${link.href}`}
+                  offset={-70}
+                  onClick={showNav}
+                >
+                  {link.title}
+                </NavLink>
+              ) : (
+                <a
+                  href={link.href}
+                  // spy={true}
+                  // smooth={true}
+                  offset={-70} // Adjust this based on your header height
+                  // duration={500}
+                  className="text-primary-40 text-lg cursor-pointer hover:opacity-90"
+                  onClick={showNav} // Close menu when clicking a link
+                >
+                  {link.title}
+                </a>
+              )}
             </li>
           ))}
         </ul>
