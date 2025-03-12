@@ -92,7 +92,7 @@ const LoginForm = () => {
             <input
               id="password"
               name="password"
-              type="tel"
+              type={showpassword ? "text" : "password"}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.password}
