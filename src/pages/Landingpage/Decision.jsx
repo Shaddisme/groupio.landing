@@ -20,19 +20,31 @@ const Decision = () => {
 
           <div className="w-full h-auto flex flex-col gap-[0.69rem] justify-start items-start">
             <div className="w-full gap-[0.62rem] justify-start items-center h-auto flex flex-row">
-              <img src={singleLogo} alt="logo" />
+              <img
+                src={singleLogo}
+                className="motion-preset-oscillate motion-duration-900"
+                alt="logo"
+              />
               <p className="text-[#5F5E5E] text-[1.125rem] font-bold leading-[1.5625rem]">
                 Visual progress bar
               </p>
             </div>
             <div className="w-full gap-[0.62rem] justify-start items-center h-auto flex flex-row">
-              <img src={singleLogo} alt="logo" />
+              <img
+                src={singleLogo}
+                className="motion-preset-oscillate motion-duration-900"
+                alt="logo"
+              />
               <p className="text-[#5F5E5E] text-[1.125rem] font-bold leading-[1.5625rem]">
                 Foreign exchange calculator.
               </p>
             </div>
             <div className="w-full gap-[0.62rem] justify-start items-center h-auto flex flex-row">
-              <img src={singleLogo} alt="logo" />
+              <img
+                src={singleLogo}
+                className="motion-preset-oscillate motion-duration-900"
+                alt="logo"
+              />
               <p className="text-[#5F5E5E] text-[1.125rem] font-bold leading-[1.5625rem]">
                 Budget and expenses tracker
               </p>
@@ -51,7 +63,7 @@ const Decision = () => {
       {/* image */}
       <div className="w-full lg:w-1/2  h-auto flex-row flex lg:justify-start justify-center items-center ">
         <img
-          className="lg:w-[27.1875rem] lg:h-[27.1875rem;]  w-[9.45106rem] h-[9.45106rem]"
+          className="lg:w-[27.1875rem] lg:h-[27.1875rem]  w-[9.45106rem] h-[9.45106rem]"
           src={image}
           alt="image"
         />

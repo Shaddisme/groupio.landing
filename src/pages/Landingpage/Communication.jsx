@@ -20,13 +20,21 @@ const Communication = () => {
 
           <div className="lg:w-full w-[100%] px-[2rem]   h-auto flex  flex-col gap-[0.69rem] justify-start  lg:justify-start lg:items-start">
             <div className="w-full gap-[0.62rem] justify-start items-center h-auto flex flex-row">
-              <img src={singleLogo} alt="logo" />
+              <img
+                src={singleLogo}
+                className="motion-preset-oscillate motion-duration-900"
+                alt="logo"
+              />
               <p className="text-[#5F5E5E] text-[1.125rem] font-bold leading-[1.5625rem]">
                 In-app group chat.
               </p>
             </div>
             <div className="w-full gap-[0.62rem] justify-start items-center h-auto flex flex-row">
-              <img src={singleLogo} alt="logo" />
+              <img
+                src={singleLogo}
+                className="motion-preset-oscillate motion-duration-900"
+                alt="logo"
+              />
               <p className="text-[#5F5E5E] text-[1.125rem] font-bold leading-[1.5625rem]">
                 Notifications and status updates.
               </p>
