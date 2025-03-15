@@ -29,7 +29,7 @@ const Itinerary = () => {
               </p>
             </div>
             <div className="w-full gap-[0.62rem] justify-start items-center h-auto flex flex-row">
-              <img src={singleLogo} alt="logo" />
+              <img src={singleLogo} alt="logo" className="" />
               <p className="text-[#5F5E5E] text-[1.125rem] font-bold leading-[1.5625rem]">
                 Polling feature
               </p>
@@ -54,7 +54,7 @@ const Itinerary = () => {
       {/* image */}
       <div className="lg:w-1/2 w-full h-auto flex-row flex lg:justify-end justify-center items-start lg:items-center ">
         <img
-          className="lg:w-full lg:h-auto  w-[9.45106rem] h-[9.45106rem]"
+          className="lg:w-full lg:h-auto   w-[9.45106rem] h-[9.45106rem]   "
           src={image}
           alt="image"
         />

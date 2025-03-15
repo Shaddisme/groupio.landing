@@ -20,7 +20,8 @@ const NewsLetter = () => {
 
         resetForm();
       } catch (error) {
-        alert("Please try again. Error: " + error.message);
+        // alert("Please try again. Error: " + error.message);
+        console.log(error.message);
       }
     },
   });
