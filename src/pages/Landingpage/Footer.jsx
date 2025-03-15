@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
 
       <div className="w-1/3  text-[0.875rem] font-normal text-center flex-row flex justify-center  text-white h-auto">
-        <p> © 2024 Groupio </p>
+        <p> © {new Date().getFullYear()} Groupio </p>
       </div>
 
       <div className="w-1/3 h-auto flex flex-row  justify-end items-center gap-[0.69rem]">
