@@ -178,7 +178,7 @@ const LoginForm = () => {
 const RightLogin = () => (
   <div className="w-1/2 hidden lg:block z-0 h-full ">
     <div
-      className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/loginImage.svg')] h-full"
+      className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/loginImage.png')] h-full"
       alt="contactbg"
     >
       <NavLink to={"/"}>
@@ -197,7 +197,7 @@ const RightLogin = () => (
 // bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat
 const Login = () => {
   return (
-    <div className="w-full h-full overflow-hidden  bg-[url('/assets/singupimage.svg')] bg-cover  bg-no-repeat lg:justify-between bg-center justify-center  lg:px-[0rem] px-[0.5rem] lg:py-0 py-[0.1rem] items-start flex flex-row">
+    <div className="w-full h-full overflow-hidden  bg-[url('/assets/singupimage.png')] bg-cover  bg-no-repeat lg:justify-between bg-center justify-center  lg:px-[0rem] px-[0.5rem] lg:py-0 py-[0.1rem] items-start flex flex-row">
       <LoginForm />
       <RightLogin />
     </div>

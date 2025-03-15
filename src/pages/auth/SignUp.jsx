@@ -230,7 +230,7 @@ const SignUpForm = () => {
 const RightSignUp = () => (
   <div className="w-1/2 z-0 lg:block hidden h-full ">
     <div
-      className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/singupimage.svg')] h-full"
+      className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/singupimage.png')] h-full"
       alt="contactbg"
     >
       <NavLink to={"/"}>
@@ -244,12 +244,9 @@ const RightSignUp = () => (
   </div>
 );
 
-// bg-[url('/assets/contactImage.svg')]
-// bg-right bg-no-repeat
-// bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat
 const SignUp = () => {
   return (
-    <div className="w-full h-full overflow-hidden  bg-[url('/assets/singupimage.svg')] bg-cover  bg-no-repeat lg:justify-between bg-center justify-center  lg:px-[0rem] px-[0.5rem] lg:py-0 py-[0.1rem] items-start flex flex-row">
+    <div className="w-full h-full overflow-hidden  bg-[url('/assets/singupimage.png')] bg-cover  bg-no-repeat lg:justify-between bg-center justify-center  lg:px-[0rem] px-[0.5rem] lg:py-0 py-[0.1rem] items-start flex flex-row">
       <SignUpForm />
       <RightSignUp />
     </div>

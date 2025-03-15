@@ -164,7 +164,7 @@ const ContactForm = () => {
 const RightContact = () => (
   <div className="w-1/2 hidden lg:block z-0 h-full  ">
     <div
-      className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/contactImage.svg')] h-dvh "
+      className="w-full bg-no-repeat bg-cover flex flex-row justify-end items-start py-[2rem] px-[2rem]  bg-right bg-[url('/assets/contactImage.png')] h-dvh "
       alt="contactbg"
     >
       <NavLink to={"/"}>
@@ -183,7 +183,7 @@ const RightContact = () => (
 // bg-[url('/assets/contactImage.svg')] bg-cover  bg-no-repeat
 const Contact = () => {
   return (
-    <div className="w-full lg:h-auto h-screen overflow-hidden bg-[url('/assets/contactImage.svg')] bg-cover  bg-center justify-center bg-no-repeat lg:justify-between items-start flex flex-row   lg:px-[0rem] px-[0.5rem] lg:py-0 py-[0.5rem] ">
+    <div className="w-full lg:h-auto h-screen overflow-hidden bg-[url('/assets/contactImage.png')] bg-cover  bg-center justify-center bg-no-repeat lg:justify-between items-start flex flex-row   lg:px-[0rem] px-[0.5rem] lg:py-0 py-[0.5rem] ">
       <ContactForm />
       <RightContact />
     </div>
