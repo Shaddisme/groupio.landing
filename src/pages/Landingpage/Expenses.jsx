@@ -14,7 +14,7 @@ const Expenses = () => {
         <div className=" w-full h-auto gap-[2rem] flex flex-col justify-start items-start">
           <div className="w-full h-auto flex text-center flex-col justify-start items-center lg:items-start gap-[1rem] lg:gap-[2rem]">
             <h1 className="text-primaryColors-primary_2_Dark lg:text-[2.25rem] text-[1.75rem] font-bold leading-[2.8125rem] ">
-              Expense tracking
+              Expense Tracking
             </h1>
             <p className="text-[#5F5E5E] text-[1.125rem] cardText font-normal leading-[1.5rem] ">
               {`Simplify group expense tracking with Groupio. Log expenses, split costs, and stay within budget while enjoying  real-time updates and automatic calculations for transparency and fairness.`}

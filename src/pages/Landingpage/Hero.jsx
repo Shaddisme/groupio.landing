@@ -35,17 +35,17 @@ const Hero = () => {
         id="home"
         className="w-full lg:px-[6.25rem] px-[0.69rem] py-[1.5rem] lg:text-left justify-start items-center flex-col lg:py-[4rem] gap-[2.5rem] flex lg:flex-row lg:items-start lg:justify-between"
       >
-        <div className="lg:w-[50%] w-full h-auto justify-start items-center lg:items-start flex-col flex gap-[2.44rem] lg:gap-[2.53rem]">
-          <h1 className="w-full heroText  h-auto text-[2.375rem] lg:text-[3.4375rem] text-primaryColors-primary_2_Dark font-bold leading-[3.4375rem]    ">
+        <div className="lg:w-[50%]  w-full h-auto md:text-center justify-start items-center lg:items-start flex-col flex gap-[2.44rem] lg:gap-[2.53rem]">
+          <h1 className="w-full heroText  md:text-center  h-auto text-[2.375rem] lg:text-[3.4375rem] text-primaryColors-primary_2_Dark font-bold leading-[3.4375rem]    ">
             Plan your group trip with
             <span className="text-[#1E7B68]"> Groupio</span>
           </h1>
 
           <div className="w-full text-[#5F5E5E] h-auto flex-col flex justify-start items-start gap-[1rem] font-normal leading-[1.5rem]">
-            <p className="hidden w-full text-[1.125rem] lg:block font-normal">
+            <p className="hidden w-full  text-[1.125rem] lg:block font-normal">
               Experience the joy of effortless group travel with Groupio.
             </p>
-            <p className="font-semibold smallText w-full text-[1.125rem] leading-[2rem]    ">
+            <p className="font-semibold md:text-center smallText w-full text-[1.125rem] leading-[2rem]    ">
               Get your group trip out of the group chat and start your next
               adventure today!
             </p>

@@ -55,6 +55,18 @@ const ContactForm = () => {
 
   return (
     <div className="lg:w-1/2 w-full lg:h-screen  flex flex-col justify-start z-10 items-center bg-white overflow-y-hidden gap-[1rem] rounded-[2.50rem] lg:rounded-r-[2.50rem] lg:rounded-l-[0rem] py-[1rem]  px-[0rem] lg:px-[3rem]  ">
+      <NavLink
+        className="w-full h-auto lg:hidden  flex flex-row px-[1rem] justify-start "
+        to={"/"}
+      >
+        <img
+          src={cancel}
+          className=" cursor-pointer    hover:opacity-70 flex flex-row justify-start  items-start "
+          alt="cancel"
+        />
+        {/* <ArrowLeft /> */}
+      </NavLink>
+
       <div className="w-full h-auto text-center">
         <h1 className="text-primaryColors-primary_2_Dark/70 lg:text-[2.50rem] text-[1.8rem] font-serif font-bold leading-[3.4375rem]">
           Contact Us

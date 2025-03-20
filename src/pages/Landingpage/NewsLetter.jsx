@@ -47,7 +47,7 @@ const NewsLetter = () => {
                 name="email"
                 onChange={formik.handleChange}
                 required
-                className="border w-full border-[#D9D9D9] outline-none text-white bg-primaryColors-primary_1 text-[1.0625rem] font-normal leading-[1.5625rem]  rounded-[1.25rem] py-[1.5rem] px-[1.25rem] text-black/50 items-center shrink-0 gap-[0.625rem]  h-[3.75rem] md:w-[320px] lg:w-[48.375rem]"
+                className="border w-full border-[#D9D9D9] outline-none text-white bg-primaryColors-primary_1 text-[1.0625rem] font-normal leading-[1.5625rem]  rounded-[1.25rem] py-[1.5rem] px-[1.25rem] text-black/50 items-center shrink-0 gap-[0.625rem]  h-[3.75rem] md:w-[48.375rem]"
               />
 
               <button
