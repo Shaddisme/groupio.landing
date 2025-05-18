@@ -5,7 +5,7 @@ function AIsection() {
   return (
     <Layout
       id="aisection"
-      className="py-[4rem] px-[2rem]   flex lg:gap-0 gap-[2rem] bg-[#A9F8E7]/10 lg:flex-row-reverse  flex-col justify-start items-center lg:justify-between lg:items-center"
+      className="py-[2rem] px-[2rem]   flex lg:gap-0 gap-[2rem] bg-[#A9F8E7]/10 lg:flex-row-reverse  flex-col justify-start items-center lg:justify-between lg:items-center"
     >
       {/* Right Content - AI Assistant */}
       <div className="w-full lg:w-[40%] relative flex justify-center items-center mt-8 lg:mt-0 order-0 lg:order-none">
