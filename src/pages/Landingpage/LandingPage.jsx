@@ -10,6 +10,7 @@ import MobileHeader from "./MobileHeader";
 import NewsLetter from "./NewsLetter";
 import Testimonial from "./Testimonial";
 import { motion } from "framer-motion";
+import AIsection from "./AIsection";
 
 // const LandingPage = () => {
 //   const sectionVariants = {
@@ -123,6 +124,16 @@ const LandingPage = () => {
       <Header />
       <div className="lg:pt-[6rem] pt-[5rem] w-full">
         <Hero />
+
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ amount: 0.2, margin: "100px" }} // Adjusted viewport settings
+          variants={sectionVariants}
+          key="aisection"
+        >
+          <AIsection />
+        </motion.div>
 
         <motion.div
           initial="offscreen"
